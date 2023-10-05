@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog de Perros" />
+  <meta name="author" content="Natalia Acevedo, Thiago Soberon, Diego Fernandez, Alan Chibilisco,Mariano Meik" />
+  <meta name="keywords" content="perros, razas, opiniones" />
+  <!-- CSS only bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://kit.fontawesome.com/e304c7dec7.js" crossorigin="anonymous"></script>
+  <title>Blog del Firu</title>
+  <link rel="shortcut icon" href="../img/iconPage.png">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark colorFondo fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/iconLogo.png" alt="imagen del logotipo de blog del firu" width="90px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarPlantilla"
+          aria-controls="navBarPlantilla" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBarPlantilla">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="razas.html">Nuestras Razas</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="acercaDeNosotros.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item px-1 mx-2">
+              <a href="login.html" class="btn colorBotonIS marginBotonesNav">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item px-1 mx-2">
+              <button class="btn colorSuscripcion marginBotonesNav" type="button" data-bs-toggle="modal"
+                data-bs-target="#ModalSuscripcion">
+                Suscripción
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container py-5 my-5">
+    <section>
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="bg-light pt-2 mt-5">
+        <ol class="breadcrumb container">
+          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+          <li class="breadcrumb-item">
+            <a href="razas.html">Nuestras Razas</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Beagle
+          </li>
+        </ol>
+      </nav>
+      <h1 class="display-2 text-center ">Beagle</h1>
+      <hr />
+    </section>
+    <section class=" my-2 container">
+      <article class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 py-2">
+          <img src="../img/galeria imagenes/beagle.png" alt="imagen de un Beagle" class="w-100 rounded" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 py-2">
+          <p>
+          <h2>Sabuezo y cazador, pero adorable</h2>
+          </p>
+          <p>
+            Son una raza de perros conocidos por su capacidad como sabueso y cazador, el <b>Beagle</b> es un perro
+            inteligente,cariñoso y muy amistoso, especialmente con los niños. De tamaño pequeño a mediano, tienen el
+            cuerpo alargado, las patas más bien cortas y las orejas largas y suaves. Son ideales para convivir en
+            familia, aunque su necesidad de consumir energía puede dificultar un poco su educación.
+          </p>
+          <p>El <b>Beagle</b> se caracteriza por tener una expresión muy dulce, lo que contrasta con su cuerpo, ya que
+            son muy compactos y musculosos.
+          </p>
+          <p>El <b>Beagle</b> es utilizado principalmente para rastrear liebres, conejos y otras piezas de caza. Su gran
+            capacidad olfativa e instinto de rastreo hace que se utilicen como perros de detección de importaciones
+            agrícolas prohíbidas y productos alimenticios en cuarentena a lo largo de todo el mundo.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!--seccion video-->
+    <section class="container my-5">
+      <article class=" row">
+        <div class=" col-sm-12">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/pbLSEF8mMbo?start=3"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </article>
+    </section>
+    <!--seccion comentarios-->
+    <section class=" container mt-5">
+      <article class=" row mb-5">
+        <div class="col-sm-12">
+          <form>
+            <label for="consulta" class="form-label">
+              <h3 class=" fw-bolder">Ingrese su Comentario</h3>
+            </label>
+            <textarea name="comentarios" id="consulta" rows="5" class="form-control"
+              placeholder="Agregue su comentario aqui" required minlength="4" maxlength="250"></textarea>
+            <div class="mt-2">
+              <abbr title="Negrita"><i class="fas fa-bold btn border border-1 border-gray-700"></i></abbr></i>
+              </i><abbr title="Cursiva"><i class="fas fa-italic btn border border-1 border-gray-700"></i></abbr>
+              <abbr title="Subrayado"><i class="fas fa-underline btn border border-1 border-gray-700"></i></abbr>
+              <abbr title="Tachado"><i class="fas fa-strikethrough btn border border-1 border-gray-700"></i></abbr>
+              <abbr title="Lista ordenada"><i class="fas fa-list-ol btn border border-1 border-gray-700"></i></abbr>
+              <abbr title="Lista desordenada"><i class="fas fa-list-ul btn border border-1 border-gray-700"></i></abbr>
+            </div>
+            <button type="submit" class="btn my-4 colorBoton">
+              <b>Enviar</b>
+            </button>
+          </form>
+        </div>
+      </article>
+      <h3 class=" fw-bolder mb-3">"Ultimos comentarios"</h3>
+      <article class=" row my-2">
+        <hr class=" text-secondary">
+        <div class=" col-sm-2 text-center"><i class="far fa-user-circle fa-4x userComentary"></i></div>
+        <div class=" col-sm-10">
+          <p class="mt-3 fs-6 text-muted"><span class=" userComentary fs-4 fw-bolder">Acevedo Natalia</span><span
+              class=" ms-4 me-2"><i class="far fa-clock fa-1x"></i></span>07 de Setiembre de 2021 00:24</p>
+          <p>Es una excelente elección para una casa donde hay niños.</p>
+          <div class=" d-flex justify-content-end">
+            <button class="btn btnComentarioMas userComentary" type="submit">
+              <i class="fas fa-plus"></i>
+            </button>
+            <span class="mt-1">0</span>
+            <button class="btn btnComentarioMenos userComentary" type="submit">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button class="ms-3 btn btnResponder userComentary" type="submit">
+              <i class="fas fa-share me-1"></i>
+              <span>Responder</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class=" row my-2">
+        <hr class=" text-secondary">
+        <div class=" col-sm-2 text-center"><i class="far fa-user-circle fa-4x userComentary"></i></div>
+        <div class=" col-sm-10">
+          <p class="mt-3 fs-6 text-muted"><span class=" userComentary fs-4 fw-bolder">Soberon Thiago</span><span
+              class=" ms-4 me-2"><i class="far fa-clock fa-1x"></i></span>06 de Setiembre de 2021 22:24</p>
+          <p>Muchas gracias por la info, muy completa.</p>
+          <div class=" d-flex justify-content-end">
+            <button class="btn btnComentarioMas userComentary" type="submit">
+              <i class="fas fa-plus"></i>
+            </button>
+            <span class="mt-1">0</span>
+            <button class="btn btnComentarioMenos userComentary" type="submit">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button class="ms-3 btn btnResponder userComentary" type="submit">
+              <i class="fas fa-share me-1"></i>
+              <span>Responder</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class=" row my-2">
+        <hr class=" text-secondary">
+        <div class=" col-sm-2 text-center"><i class="far fa-user-circle fa-4x userComentary"></i></div>
+        <div class=" col-sm-10">
+          <p class="mt-3 fs-6 text-muted"><span class=" userComentary fs-4 fw-bolder">Fernandez Diego</span><span
+              class=" ms-4 me-2"><i class="far fa-clock fa-1x"></i></span>06 de Setiembre de 2021 21:05</p>
+          <p>Pueden sugerirme algún alimento bueno para el pelo de los Beagles?</p>
+          <div class=" d-flex justify-content-end">
+            <button class="btn btnComentarioMas userComentary" type="submit">
+              <i class="fas fa-plus"></i>
+            </button>
+            <span class="mt-1">0</span>
+            <button class="btn btnComentarioMenos userComentary" type="submit">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button class="ms-3 btn btnResponder userComentary" type="submit">
+              <i class="fas fa-share me-1"></i>
+              <span>Responder</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class=" row my-2">
+        <hr class=" text-secondary">
+        <div class=" col-sm-2 text-center"><i class="far fa-user-circle fa-4x userComentary"></i></div>
+        <div class=" col-sm-10">
+          <p class="mt-3 fs-6 text-muted"><span class=" userComentary fs-4 fw-bolder">Chibilisco Alan</span><span
+              class=" ms-4 me-2"><i class="far fa-clock fa-1x"></i></span>05 de Setiembre de 2021 20:24</p>
+          <p>No les gusta estar solos. Quieren jugar siempre.</p>
+          <div class=" d-flex justify-content-end">
+            <button class="btn btnComentarioMas userComentary" type="submit">
+              <i class="fas fa-plus"></i>
+            </button>
+            <span class="mt-1">0</span>
+            <button class="btn btnComentarioMenos userComentary" type="submit">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button class="ms-3 btn btnResponder userComentary" type="submit">
+              <i class="fas fa-share me-1"></i>
+              <span>Responder</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class=" row my-2">
+        <hr class=" text-secondary">
+        <div class=" col-sm-2 text-center"><i class="far fa-user-circle fa-4x userComentary"></i></div>
+        <div class=" col-sm-10">
+          <p class="mt-3 fs-6 text-muted"><span class=" userComentary fs-4 fw-bolder">Meik Mariano</span><span
+              class=" ms-4 me-2"><i class="far fa-clock fa-1x"></i></span>05 de Setiembre de 2021 18:32</p>
+          <p>Un Beagle es un niño siempre.</p>
+          <div class=" d-flex justify-content-end">
+            <button class="btn btnComentarioMas userComentary" type="submit">
+              <i class="fas fa-plus"></i>
+            </button>
+            <span class="mt-1">0</span>
+            <button class="btn btnComentarioMenos userComentary" type="submit">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button class="ms-3 btn btnResponder userComentary" type="submit">
+              <i class="fas fa-share me-1"></i>
+              <span>Responder</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- Modal -->
+  <div class="modal fade" id="ModalSuscripcion" tabindex="-1" aria-labelledby="ModalSuscripcion" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-xl-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="ModalSuscripcion">Suscripción</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-4">
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="validationServer01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationServer01" placeholder="Marcelo"
+                maxlength="20" required>
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="validationServer02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationServer02" placeholder="Gomez"
+                maxlength="20" required>
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="validationServerUsername" class="form-label">Usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="text" class="form-control" id="validationServerUsername" placeholder="tucu10"
+                  aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" maxlength="10" required>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="validationServer03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationServer03" placeholder="Yerba Buena"
+                aria-describedby="validationServer03Feedback" maxlength="30" required>
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="validationServer04" class="form-label">Provincia</label>
+              <select class="form-select" id="validationServer04"
+                aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Seleccione</option>
+                <option>Buenos Aires</option>
+                <option>Capital Federal</option>
+                <option>Catamarca</option>
+                <option>Chaco</option>
+                <option>Chubut</option>
+                <option>Cordoba</option>
+                <option>Corrientes</option>
+                <option>Entre Ríos</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa</option>
+                <option>La Rioja</option>
+                <option>Mendoza</option>
+                <option>Misiones</option>
+                <option>Neuquén</option>
+                <option>Rio Negro</option>
+                <option>Salta</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tierra del Fuego</option>
+                <option>Tucumán</option>
+              </select>
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="validationServer05" class="form-label">Código Postal</label>
+              <input type="number" class="form-control" id="validationServer05"
+                aria-describedby="validationServer05Feedback" placeholder="4107" maxlength="6" required>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="validationServer06" class="form-label">Contraseña</label>
+              <input type="text" class="form-control" id="validationServer06" placeholder="*******"
+                aria-describedby="validationServer06Feedback" minlength="6" maxlength="30" required>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="validationServer07" class="form-label">Repetí Contraseña</label>
+              <input type="text" class="form-control" id="validationServer07" placeholder="*******"
+                aria-describedby="validationServer07Feedback" minlength="6" maxlength="30" required>
+            </div>
+            <div>
+              <p>Mínimo 8 caracteres</p>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
+                  aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Estoy de acuerdo con los términos y condiciones.
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn colorBoton" type="submit">Registrarme</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="container-fluid colorFondo">
+    <section class="container">
+      <article class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4 py-4 logoResponsive">
+          <a href="../index.html"><img src="../img/iconLogo.png" alt="icono del logotipo de blog del firu"
+              width="90px"></a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-4">
+          <ul class="navbar-nav ms-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light aria-current=" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="razas.html">Nuestras Razas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="acercaDeNosotros.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="error404.html">Legales</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-4  text-light">
+          <h5 class="logoResponsive">Seguinos en nuestras redes</h5>
+          <div class=" d-flex redesResponsive">
+            <a href="error404.html" class="text-white facebook" target="blank"><i
+                class="fab fa-facebook-square fa-2x px-1"></i></a>
+            <a href="error404.html" class="text-white twitter" target="blank"><i
+                class="fab fa-twitter-square fa-2x px-1"></i></a>
+            <a href="error404.html" class="text-white instagram" target="blank"><i
+                class="fab fa-instagram fa-2x px-1"></i></a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </footer>
+  <!-- JavaScript  -->
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
